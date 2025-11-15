@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>TopEmbed — Channels</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#111;color:#eee}
+.header{padding:18px;text-align:center;background:#0b0b0b}
+.container{display:flex;flex-wrap:wrap;padding:10px;gap:8px}
+.card{background:#141414;border:1px solid #222;border-radius:6px;flex:1 1 300px;min-width:260px;max-width:420px;padding:8px;box-sizing:border-box}
+.card button{width:100%;padding:10px;border-radius:4px;border:0;background:#0a84ff;color:white;font-weight:600}
+.title{font-size:14px;margin:6px 0}
+.player{position:sticky;top:0;background:#000;padding:8px}
+.player iframe{width:100%;height:480px;border:0}
+.small{font-size:12px;color:#bbb}
+</style>
+</head>
+<body>
+<div class="header"><h1 style="margin:.2em 0">TopEmbed — Channels</h1>
+<p class="small">Click a tile to open the stream in the player. Lazy-loads a single iframe to reduce browser load.</p>
+</div>
+<div class="player" id="player">
+<p class="small" style="color:#ccc">No channel loaded. Click a tile to play.</p>
+</div>
+<div class="container">
+
+<div class="card">
+  <div class="title">GOLFChannel[USA]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/GOLFChannel[USA]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/GOLFChannel[USA]','GOLFChannel[USA]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ESPN2[USA]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ESPN2[USA]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ESPN2[USA]','ESPN2[USA]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">SportsnetEast[Canada]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/SportsnetEast[Canada]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/SportsnetEast[Canada]','SportsnetEast[Canada]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">SportsnetOntario[Canada]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/SportsnetOntario[Canada]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/SportsnetOntario[Canada]','SportsnetOntario[Canada]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">SportsnetPacific[Canada]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/SportsnetPacific[Canada]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/SportsnetPacific[Canada]','SportsnetPacific[Canada]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">SportsnetWest[Canada]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/SportsnetWest[Canada]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/SportsnetWest[Canada]','SportsnetWest[Canada]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">SportTV3[Portugal]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/SportTV3[Portugal]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/SportTV3[Portugal]','SportTV3[Portugal]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ViaplaySports1[UK]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ViaplaySports1[UK]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ViaplaySports1[UK]','ViaplaySports1[UK]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex8866178</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex8866178" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex8866178','ex8866178')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl236616</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl236616" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl236616','exxpl236616')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl249165</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl249165" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl249165','exxpl249165')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ACCNetwork[USA]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ACCNetwork[USA]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ACCNetwork[USA]','ACCNetwork[USA]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex11355810</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex11355810" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex11355810','ex11355810')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">FOXSports1[USA]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/FOXSports1[USA]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/FOXSports1[USA]','FOXSports1[USA]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">NBCSBoston[USA]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/NBCSBoston[USA]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/NBCSBoston[USA]','NBCSBoston[USA]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">TSN1[Canada]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/TSN1[Canada]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/TSN1[Canada]','TSN1[Canada]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">TSN4[Canada]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/TSN4[Canada]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/TSN4[Canada]','TSN4[Canada]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex8772458</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex8772458" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex8772458','ex8772458')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl254816</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl254816" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl254816','exxpl254816')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl254819</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl254819" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl254819','exxpl254819')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl254821</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl254821" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl254821','exxpl254821')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl249149</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl249149" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl249149','exxpl249149')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">FanDuelSportsFlorida[USA]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/FanDuelSportsFlorida[USA]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/FanDuelSportsFlorida[USA]','FanDuelSportsFlorida[USA]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">YES[USA]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/YES[USA]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/YES[USA]','YES[USA]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">SportsnetOne[Canada]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/SportsnetOne[Canada]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/SportsnetOne[Canada]','SportsnetOne[Canada]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex8772459</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex8772459" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex8772459','ex8772459')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl254818</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl254818" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl254818','exxpl254818')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl249150</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl249150" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl249150','exxpl249150')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl249135</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl249135" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl249135','exxpl249135')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl250975</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl250975" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl250975','exxpl250975')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ESPNU[USA]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ESPNU[USA]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ESPNU[USA]','ESPNU[USA]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex8963176</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex8963176" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex8963176','ex8963176')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex8971518</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex8971518" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex8971518','ex8971518')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ESPN[USA]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ESPN[USA]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ESPN[USA]','ESPN[USA]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">TSN2[Canada]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/TSN2[Canada]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/TSN2[Canada]','TSN2[Canada]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exclemslle</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exclemslle" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exclemslle','exclemslle')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">FanDuelSportsDetroit[USA]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/FanDuelSportsDetroit[USA]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/FanDuelSportsDetroit[USA]','FanDuelSportsDetroit[USA]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">NBCSPhiladelphia[USA]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/NBCSPhiladelphia[USA]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/NBCSPhiladelphia[USA]','NBCSPhiladelphia[USA]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex8772474</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex8772474" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex8772474','ex8772474')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl254820</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl254820" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl254820','exxpl254820')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl249136</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl249136" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl249136','exxpl249136')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex11370593</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex11370593" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex11370593','ex11370593')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex11373265</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex11373265" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex11373265','ex11373265')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex11370466</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex11370466" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex11370466','ex11370466')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex11373261</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex11373261" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex11373261','ex11373261')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex11373267</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex11373267" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex11373267','ex11373267')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex11376966</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex11376966" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex11376966','ex11376966')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex11374242</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex11374242" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex11374242','ex11374242')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">SportTV6[Portugal]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/SportTV6[Portugal]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/SportTV6[Portugal]','SportTV6[Portugal]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex11374115</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex11374115" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex11374115','ex11374115')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex8963600</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex8963600" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex8963600','ex8963600')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex8772470</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex8772470" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex8772470','ex8772470')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl254822</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl254822" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl254822','exxpl254822')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl254834</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl254834" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl254834','exxpl254834')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl254835</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl254835" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl254835','exxpl254835')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl249152</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl249152" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl249152','exxpl249152')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl249137</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl249137" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl249137','exxpl249137')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex8772462</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex8772462" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex8772462','ex8772462')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl254824</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl254824" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl254824','exxpl254824')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl249153</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl249153" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl249153','exxpl249153')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl249138</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl249138" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl249138','exxpl249138')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl250974</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl250974" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl250974','exxpl250974')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">NBCSCalifornia[USA]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/NBCSCalifornia[USA]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/NBCSCalifornia[USA]','NBCSCalifornia[USA]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex8772452</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex8772452" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex8772452','ex8772452')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl254826</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl254826" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl254826','exxpl254826')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl249154</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl249154" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl249154','exxpl249154')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl249139</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl249139" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl249139','exxpl249139')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex8772456</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex8772456" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex8772456','ex8772456')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl254823</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl254823" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl254823','exxpl254823')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl254825</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl254825" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl254825','exxpl254825')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl254828</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl254828" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl254828','exxpl254828')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl249155</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl249155" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl249155','exxpl249155')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex11357966</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex11357966" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex11357966','ex11357966')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex11370137</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex11370137" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex11370137','ex11370137')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">BallySportsSun[USA]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/BallySportsSun[USA]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/BallySportsSun[USA]','BallySportsSun[USA]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">FanDuelSportsMidwest[USA]</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/FanDuelSportsMidwest[USA]" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/FanDuelSportsMidwest[USA]','FanDuelSportsMidwest[USA]')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex8866493</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex8866493" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex8866493','ex8866493')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl254845</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl254845" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl254845','exxpl254845')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">exxpl236617</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/exxpl236617" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/exxpl236617','exxpl236617')">Play</button></div>
+</div>
+
+<div class="card">
+  <div class="title">ex11374243</div>
+  <div class="small">Source: <a href="https://topembed.pw/channel/ex11374243" target="_blank" rel="noopener noreferrer" style="color:#7fe0ff">Open</a></div>
+  <div style="margin-top:8px"><button onclick="loadChannel('https://topembed.pw/channel/ex11374243','ex11374243')">Play</button></div>
+</div>
+
+</div>
+<script>
+function loadChannel(src, label){
+  const p = document.getElementById('player');
+  p.innerHTML = '';
+  const iframe = document.createElement('iframe');
+  iframe.src = src;
+  iframe.setAttribute('allow','autoplay; fullscreen');
+  iframe.allowFullscreen = true;
+  iframe.loading = 'eager';
+  p.appendChild(iframe);
+  // scroll player into view
+  iframe.scrollIntoView({behavior:'smooth'});
+}
+</script>
+</body>
+</html>
